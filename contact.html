@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <nav>
+        <img src="images/logo/writiclelogo.PNG" alt="Writicle">
+        <div class="tabList">
+            <div class="leftTabs">
+            
+                <a  href="home.html">Home</a>
+                <a href="saved.html">Saved</a>
+                <a href="saved.html">About</a>
+                <a class="active" href="contact.html">Contact</a>
+            
+            </div>
+            <div class="rightTabs">
+                <a href="login.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="contactContainer">
+        <div class="leftSide">
+            <div class="leftContent">
+                <h1 class="contactText">Contact Us</h1>
+
+                <h2 class="contactText">Further any query:</h2>
+                <h3 class="contactText">93434343</h3>
+
+                <h2 class="contactText">Mail : jaykumarbamania@gmail.com</h2>
+            </div>
+        </div>
+        <div class="rightSide">
+            <div class="logoDiv">
+                <img src="images/logo/writiclelogo.PNG" alt="Writicle">
+            </div>
+            <h1>Get in Touch</h1>
+            <p>If you have any questions or need help, please fill out the form below. We do our best to respond it.</p>
+            <form class="contactForm" method="post" onsubmit="return contactForm()">
+                <table >
+                    <tr>
+                        <th><label for="contactname" id="contactnamelabel">Name : </label></th>
+                        <td><input type="text" name="name" id="contactname" onblur="contactnameVal()" /><span id="contactnameError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email" id="emaillabel">Email </label></th>
+                        <td><input type="email" name="email" id="email" onblur="emailVal()" /><span id="emailError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phoneno" id="phonelabel">Phone No. : </label></th>
+                        <td><input type="text" name="phone" id="phoneno" onblur="phoneVal()" /><span id="phoneError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="message" id="messagelabel">Message : </label></th>
+                        <td><textarea  name="message" id="message" onblur="messageVal()" ></textarea><span id="messageError"></span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" id="subButton">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">Created by @JayBamania 2021 </div>
+    </footer>
+    <script src="js/FormValidation.js"></script>
+</body>
+</html>

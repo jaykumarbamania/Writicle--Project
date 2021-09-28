@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Register - Writicle</title>
+</head>
+<body>
+        <nav>
+            <img src="images/logo/writiclelogo.PNG" alt="Writicle Logo">
+            <div class="tabList">
+                <div class="leftTabs">
+                
+                    <a  href="home.html">Home</a>
+                    <a href="saved.html">About</a>
+                    <a href="contact.html">Contact</a>
+                
+                </div>
+                <div class="rightTabs">
+                   
+                    <a href="login.html">Login</a>
+                    <a class="active" href="register.html" >Register</a>
+                
+                </div>
+            </div>
+        </nav>
+    <div id="container">
+        <img src="images/logo/writiclelogo.PNG" alt="Writicle Logo">
+        <h1>Sign Up</h1>
+        <p>Already have an account? <a href="login.html" class="link">Sign In</a></p>
+        <div id="tableBorder">
+            <form method="post" action="home.html" id="signupForm" onsubmit="return registerForm()">
+                <span id="formError"></span>
+                <table>
+                    <tr>
+                        <th><label for="fname" id="fnamelabel">First Name : </label></th>
+                        <td><input type="text" name="name" id="fname" onblur="fnameVal()" /><span id="fnameError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lname" id="lnamelabel">Last Name : </label></th>
+                        <td><input type="text" name="name" id="lname" onblur="lnameVal()" /><span id="lnameError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email" id="emaillabel">Email </label></th>
+                        <td><input type="email" name="email" id="email" onblur="emailVal()" /><span id="emailError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="country">Country : </label></th>
+                        <td>
+                            <select name = "country">
+                                <option value = "India" selected>India</option>
+                                <option value = "UK">UK</option>
+                                <option value = "USA">USA</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="states">State : </label></th>
+                        <td>
+                            <select name = "states">
+                                <option value = "Gujarat" selected>Gujarat</option>
+                                <option value = "Maharashtra">Maharashtra</option>
+                                <option value = "Rajasthan">Rajasthan</option>
+                                <option value = "Karnataka">Karnataka</option>
+                                <option value = "Kerala">Kerala</option>
+                                <option value = "Haryana">Haryana</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="phoneno" id="phonelabel">Phone No. : </label></th>
+                        <td><input type="text" name="phone" id="phoneno" onblur="phoneVal()" /><span id="phoneError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="age" id="agelabel">Age : </label></th>
+                        <td><input type="number" name="age" id="age" onblur="ageVal()" /><span id="ageError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="password" id="passlabel">Password : </label></th>
+                        <td><input type="password" name="password" id="password"  onblur="passVal()"/><span id="passError"></span></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cpassword" id="cpasslabel">Confirm Password : </label></th>
+                        <td><input type="password" name="password" id="cpassword" onblur="cpassVal()"/><span id="cpassError"></span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" id="subButton">Register</button></td>
+                        <!-- <td colspan="2"><input type="submit" Value="Register" id="subButton"></td> -->
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">Created by @JayBamania 2021 </div>
+    </footer>
+    <script src="js/FormValidation.js"></script>
+</body>
+</html>
